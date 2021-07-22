@@ -1,0 +1,9 @@
+rootProject.name = 'projectGradle'
+include 'db'
+include 'api'
+include 'service'
+include 'src:main:untitled'
+findProject(':src:main:untitled')?.name = 'untitled'
+include 'api:untitled'
+findProject(':api:untitled')?.name = 'untitled'
+
